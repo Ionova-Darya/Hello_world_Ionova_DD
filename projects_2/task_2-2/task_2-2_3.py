@@ -1,3 +1,5 @@
-reakt = input("название нового реактива: ")
-kolvo = input("его количество: ")
-print(f"Реактив {reakt} поступил на склад в количестве {kolvo} шт...")
+pribor = input("название нового прибора: ")
+number = input("инвентарный номер: ")
+mood = input("состояние: ")
+howmany = input("количество: ")
+print(f"Новый прибор\t{pribor}\nЕго инвентарный номер\t{number}\nЕго состояние\t{mood}\nВ количестве\t{howmany}")
