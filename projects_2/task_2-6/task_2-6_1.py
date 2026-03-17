@@ -1,10 +1,10 @@
 def ph_indetificator(ph_value):
-
     if ph_value > 7:
-        return print("Основная среда")
+        return "Основная среда"
     elif ph_value < 7:
-        return print("Кислая среда")
+        return "Кислая среда"
     else:
-        return print("Нейтральная среда")
+        return "Нейтральная среда"
 
-ph_indetificator(float(input("Введите значение pH: ")))
+result = ph_indetificator(float(input("Введите значение pH: ")))
+print(result)
