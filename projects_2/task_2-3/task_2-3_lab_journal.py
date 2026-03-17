@@ -14,5 +14,6 @@ with open('journal.txt', 'w', encoding='utf-8') as file:
     
     file.write("+" + "-" * 40 + "+\n")
     
-    file.write(f"| Вывод:{' ' * 34}|\n")
+    file.write(f"| Вывод:{conclusion}|\n")
+    file.write("+" + "-"*40 + "+")
 print("\nДанные успешно сохранены в journal.txt")
