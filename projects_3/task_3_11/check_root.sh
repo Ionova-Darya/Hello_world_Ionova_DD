@@ -2,7 +2,7 @@
 
 check_root () {
 	if [ $EUID -ne 0 ]; then
-		echo "This script must be run as root"
+		echo "Предупреждение"
 		exit 1
 	fi
 }
