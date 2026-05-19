@@ -5,4 +5,4 @@ with open("C:/Users/Даша/Desktop/6/6_0_6.txt", "w") as f:
     q3 = df.groupby('gender')['length_cm'].quantile(0.75)
     iqr = q3-q1
     for gender in iqr.index: #автоматичски создастся индекс из-за групбай, те тут это мэйл фемэйл
-        print(f"IQR for {gender}: {iqr[gender]:.2f} cm", file=f)
+        print(f"{gender}\t iqr = {iqr[gender]:.2f} cm", file=f)
