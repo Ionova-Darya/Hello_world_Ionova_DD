@@ -1,0 +1,5 @@
+import pandas as pd
+with open("C:/Users/Даша/Desktop/6/6_0_8.txt", "w") as f:
+    df = pd.read_csv("C:/Users/Даша/Downloads/wild_boars.csv")
+    cv = (df.groupby('gender')['tusk_length_cm'].std() / df.groupby('gender')['tusk_length_cm'].mean()) * 100
+    print(f'Coefficient of variations:\n{cv}', file=f)
